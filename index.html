@@ -162,11 +162,11 @@
             margin: 5px 0;
         }
 
-        .legend-color {
-            width: 20px;
-            height: 20px;
+        .legend-item img {
+            width: 24px;
+            height: 24px;
             margin-right: 8px;
-            border-radius: 50%;
+            vertical-align: middle;
         }
 
         @media (max-width: 600px) {
@@ -235,19 +235,19 @@
     
     <div class="legend">
         <div class="legend-item">
-            <div class="legend-color" style="background: #8B5CF6;"></div>
+            <img src="drink.png" alt="Drink" style="width: 24px; height: 24px;">
             <span>Drink</span>
         </div>
         <div class="legend-item">
-            <div class="legend-color" style="background: #F97316;"></div>
+            <img src="eat.png" alt="Eat" style="width: 24px; height: 24px;">
             <span>Eat</span>
         </div>
         <div class="legend-item">
-            <div class="legend-color" style="background: #10B981;"></div>
+            <img src="morning.png" alt="Morning" style="width: 24px; height: 24px;">
             <span>Morning</span>
         </div>
         <div class="legend-item">
-            <div class="legend-color" style="background: #3B82F6;"></div>
+            <img src="sights.png" alt="Sights" style="width: 24px; height: 24px;">
             <span>Sights</span>
         </div>
     </div>
@@ -298,11 +298,12 @@
 
         // Custom icon function
         function createCustomIcon(category) {
-            return L.divIcon({
-                className: 'custom-icon',
-                html: `<div style="background-color: ${categoryColors[category]}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white;"></div>`,
-                iconSize: [24, 24],
-                iconAnchor: [12, 12]
+            const iconFile = category.toLowerCase() + '.png';
+            return L.icon({
+                iconUrl: iconFile,
+                iconSize: [32, 32], // Adjust size as needed based on your icons
+                iconAnchor: [16, 16], // Center point of the icon
+                popupAnchor: [0, -16] // Point from which the popup should open
             });
         }
 
@@ -400,14 +401,22 @@
                 `;
                 
                 venueElement.addEventListener('click', () => {
-                    map.setView([venue.Latitude, venue.Longitude], 16);
-                    markers.eachLayer(marker => {
-                        const markerLatLng = marker.getLatLng();
-                        if (markerLatLng.lat === venue.Latitude && 
-                            markerLatLng.lng === venue.Longitude) {
-                            marker.openPopup();
-                        }
-                    });
+                    // Close sidebar on mobile devices (screen width < 600px)
+                    if (window.innerWidth < 600) {
+                        sidebar.classList.remove('active');
+                    }
+                    
+                    // Slight delay for smoother transition
+                    setTimeout(() => {
+                        map.setView([venue.Latitude, venue.Longitude], 16);
+                        markers.eachLayer(marker => {
+                            const markerLatLng = marker.getLatLng();
+                            if (markerLatLng.lat === venue.Latitude && 
+                                markerLatLng.lng === venue.Longitude) {
+                                marker.openPopup();
+                            }
+                        });
+                    }, 300); // 300ms delay matches the sidebar transition
                 });
                 venueList.appendChild(venueElement);
             });
