@@ -980,16 +980,6 @@
     "Longitude": -90.077116
   },
   {
-    "Name": "Avenue Cafe",
-    "Location": "1907 St Charles Ave, New Orleans, LA",
-    "Category": "Morning",
-    "Sub-Type": "Coffee",
-    "Description": "Breakfast closest to airbnb",
-    "Price": "$",
-    "Latitude": 29.935765,
-    "Longitude": -90.078559
-  },
-  {
     "Name": "Bearcat CBD",
     "Location": "845 Carondelet St, New Orleans, LA",
     "Category": "Morning",
