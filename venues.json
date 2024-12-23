@@ -1,0 +1,1192 @@
+[
+  {
+    "Name": "The Avenue Pub",
+    "Location": "1732 St Charles Ave, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Bar downstairs",
+    "Price": "$",
+    "Latitude": 29.936901,
+    "Longitude": -90.076688
+  },
+  {
+    "Name": "Fulton Alley",
+    "Location": "600 Fulton St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Happy hour: 5-7 M-Th 11-7 F",
+    "Price": "$",
+    "Latitude": 29.946986,
+    "Longitude": -90.065155
+  },
+  {
+    "Name": "Kermit's Tremé Lounge",
+    "Location": "1500 N Claiborne Ave, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Cocktails",
+    "Price": "$",
+    "Latitude": 29.970914,
+    "Longitude": -90.066719
+  },
+  {
+    "Name": "Latitude 29",
+    "Location": "321 N Peters St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Happy hour: 3-6 Daily",
+    "Price": "$",
+    "Latitude": 29.953664,
+    "Longitude": -90.065068
+  },
+  {
+    "Name": "Napoleon House",
+    "Location": "500 Chartres St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Near MLA",
+    "Price": "$",
+    "Latitude": 29.955859,
+    "Longitude": -90.065144
+  },
+  {
+    "Name": "NOLA Art Bar",
+    "Location": "2128 St Claude Ave, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Cocktails",
+    "Price": "$",
+    "Latitude": 29.968427,
+    "Longitude": -90.057299
+  },
+  {
+    "Name": "Bar Tonique",
+    "Location": "820 N Rampart St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Bar",
+    "Price": "$",
+    "Latitude": 29.961623,
+    "Longitude": -90.06719
+  },
+  {
+    "Name": "Cane & Table",
+    "Location": "1113 Decatur St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Happy hour: 3-6 Daily",
+    "Price": "$",
+    "Latitude": 29.960306,
+    "Longitude": -90.059956
+  },
+  {
+    "Name": "Bar Marilou",
+    "Location": "544 Carondelet St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Wine bar",
+    "Price": "$$",
+    "Latitude": 29.949206,
+    "Longitude": -90.071858
+  },
+  {
+    "Name": "Barrel Proof",
+    "Location": "1201 Magazine St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Nice booze + pop-up kitchens",
+    "Price": "$$$",
+    "Latitude": 29.939218,
+    "Longitude": -90.071237
+  },
+  {
+    "Name": "Carousel Bar",
+    "Location": "214 Royal St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Vieux Carre",
+    "Price": "$$$",
+    "Latitude": 29.954511,
+    "Longitude": -90.067573
+  },
+  {
+    "Name": "Sazerac Bar",
+    "Location": "130 Roosevelt Way, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Cocktails",
+    "Price": "$$$",
+    "Latitude": 29.954233,
+    "Longitude": -90.072519
+  },
+  {
+    "Name": "Tell Me Bar",
+    "Location": "1235 St Thomas St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Cocktails",
+    "Description": "Wine bar",
+    "Price": "$$$",
+    "Latitude": 29.938031,
+    "Longitude": -90.068175
+  },
+  {
+    "Name": "Black Penny",
+    "Location": "700 N Rampart St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Dive bar",
+    "Price": "$",
+    "Latitude": 29.960423,
+    "Longitude": -90.068186
+  },
+  {
+    "Name": "Chart Room",
+    "Location": "300 Chartres St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Dive bar",
+    "Price": "$",
+    "Latitude": 29.954266,
+    "Longitude": -90.066487
+  },
+  {
+    "Name": "Molly's At the Market",
+    "Location": "1107 Decatur St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Dive bar",
+    "Price": "$",
+    "Latitude": 29.960175,
+    "Longitude": -90.06002
+  },
+  {
+    "Name": "Ms. Mae's",
+    "Location": "4336 Magazine St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Dive Bar - Garden District",
+    "Price": "$",
+    "Latitude": 29.920585,
+    "Longitude": -90.101178
+  },
+  {
+    "Name": "BudRips",
+    "Location": "900 Piety, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Dive Bar",
+    "Price": "$",
+    "Latitude": 29.964976,
+    "Longitude": -90.04237
+  },
+  {
+    "Name": "Bulett's Sports Bar",
+    "Location": "2441 A P Tureaud Ave, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Dive bar",
+    "Price": "$",
+    "Latitude": 29.982102,
+    "Longitude": -90.067246
+  },
+  {
+    "Name": "R Bar & Royal Street Inn",
+    "Location": "1431 Royal St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Local bar with pool",
+    "Price": "$",
+    "Latitude": 29.964116,
+    "Longitude": -90.059515
+  },
+  {
+    "Name": "The Saint Bar",
+    "Location": "961 St Mary St, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Open very late",
+    "Price": "$",
+    "Latitude": 29.9311,
+    "Longitude": -90.073231
+  },
+  {
+    "Name": "Verret's Lounge",
+    "Location": "1738 Washington Ave, New Orleans, LA",
+    "Category": "Drink",
+    "Sub-Type": "Dive",
+    "Description": "Open very late",
+    "Price": "$",
+    "Latitude": 29.932427,
+    "Longitude": -90.087431
+  },
+  {
+    "Name": "Bon Ton Cafe",
+    "Location": "401 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Creole food/Bisque",
+    "Price": "$",
+    "Latitude": 29.949623,
+    "Longitude": -90.068175
+  },
+  {
+    "Name": "Coop's Palace",
+    "Location": "1109 Decatur St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Creole food",
+    "Price": "$",
+    "Latitude": 29.960253,
+    "Longitude": -90.060004
+  },
+  {
+    "Name": "Court of Two Sisters",
+    "Location": "613 Royal St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Creole food",
+    "Price": "$",
+    "Latitude": 29.957751,
+    "Longitude": -90.065512
+  },
+  {
+    "Name": "Jack Rose",
+    "Location": "2031 St Charles Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Nicer Cajun/Creole",
+    "Price": "$",
+    "Latitude": 29.935081,
+    "Longitude": -90.079596
+  },
+  {
+    "Name": "Jacques-Imo's Cafe",
+    "Location": "823 St Peter St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Creole food",
+    "Price": "$",
+    "Latitude": 29.959003,
+    "Longitude": -90.06611
+  },
+  {
+    "Name": "Katie's",
+    "Location": "3701 Iberville St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Creole food",
+    "Price": "$",
+    "Latitude": 29.973086,
+    "Longitude": -90.095906
+  },
+  {
+    "Name": "Mulate's",
+    "Location": "201 Julia St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Good for groups",
+    "Price": "$",
+    "Latitude": 29.944524,
+    "Longitude": -90.064931
+  },
+  {
+    "Name": "Neyow's Creole Cafe",
+    "Location": "3301 Burgundy St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Creole food",
+    "Price": "$",
+    "Latitude": 29.964974,
+    "Longitude": -90.042264
+  },
+  {
+    "Name": "The Gumbo Shop",
+    "Location": "630 St Peter, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Creole food",
+    "Price": "$",
+    "Latitude": 29.957742,
+    "Longitude": -90.064526
+  },
+  {
+    "Name": "Gabrielle's",
+    "Location": "2441 Orleans Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Classic spot",
+    "Price": "$",
+    "Latitude": 29.969203,
+    "Longitude": -90.079973
+  },
+  {
+    "Name": "Chandelier Bar",
+    "Location": "2 Canal St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Cocktails",
+    "Price": "$",
+    "Latitude": 29.948895,
+    "Longitude": -90.063494
+  },
+  {
+    "Name": "Antoine's Restaurant",
+    "Location": "723 Iberville St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Creole food",
+    "Price": "$$$",
+    "Latitude": 29.954496,
+    "Longitude": -90.068679
+  },
+  {
+    "Name": "Arnaud's Restaurant",
+    "Location": "813 Chartres St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "OYSTER PATTIES",
+    "Price": "$$$",
+    "Latitude": 29.958553,
+    "Longitude": -90.062985
+  },
+  {
+    "Name": "Bayona",
+    "Location": "430 Dauphine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Fancy restaurant",
+    "Price": "$$$",
+    "Latitude": 29.957385,
+    "Longitude": -90.068107
+  },
+  {
+    "Name": "Compere Lapin",
+    "Location": "535 Tchoupitoulas St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Fancy restaurant",
+    "Price": "$$$",
+    "Latitude": 29.947931,
+    "Longitude": -90.067498
+  },
+  {
+    "Name": "Coquette",
+    "Location": "2800 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Fancy restaurant",
+    "Price": "$$$",
+    "Latitude": 29.925929,
+    "Longitude": -90.082449
+  },
+  {
+    "Name": "Dooky Chase",
+    "Location": "2301 Orleans Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Classic spot fried chicken",
+    "Price": "$$$",
+    "Latitude": 29.968309,
+    "Longitude": -90.078525
+  },
+  {
+    "Name": "Galatoire's",
+    "Location": "209 Bourbon St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Southern style crab cakes",
+    "Price": "$$$",
+    "Latitude": 29.955048,
+    "Longitude": -90.069227
+  },
+  {
+    "Name": "La Petite Grocery",
+    "Location": "4238 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Fancy restaurant",
+    "Price": "$$$",
+    "Latitude": 29.920662,
+    "Longitude": -90.100076
+  },
+  {
+    "Name": "Peche",
+    "Location": "813 Chartres St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Fancy restaurant",
+    "Price": "$$$",
+    "Latitude": 29.958553,
+    "Longitude": -90.062985
+  },
+  {
+    "Name": "Seaworthy",
+    "Location": "630 Carondelet St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Fancy restaurant",
+    "Price": "$$$",
+    "Latitude": 29.94786,
+    "Longitude": -90.072168
+  },
+  {
+    "Name": "Brennan's",
+    "Location": "417 Royal St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Fine Dining",
+    "Description": "Seafood au gratin",
+    "Price": "$$$",
+    "Latitude": 29.956237,
+    "Longitude": -90.066725
+  },
+  {
+    "Name": "Avenue Pub",
+    "Location": "1732 St Charles Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Late Night Food",
+    "Description": "Kitchen late + bar",
+    "Price": "$$",
+    "Latitude": 29.936901,
+    "Longitude": -90.076688
+  },
+  {
+    "Name": "Corporation Bar",
+    "Location": "931 S Peters St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Late Night Food",
+    "Description": "Sandwiches & dive vibe",
+    "Price": "$",
+    "Latitude": 29.941979,
+    "Longitude": -90.065999
+  },
+  {
+    "Name": "Melba's",
+    "Location": "1525 Elysian Fields, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Late Night Food",
+    "Description": "24 hours po-boys",
+    "Price": "$",
+    "Latitude": 29.973055,
+    "Longitude": -90.056454
+  },
+  {
+    "Name": "Vyoone's",
+    "Location": "412 Girod St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Late Night Food",
+    "Description": "Kitchen open late",
+    "Price": "$$",
+    "Latitude": 29.946411,
+    "Longitude": -90.06781
+  },
+  {
+    "Name": "Central Grocery Co.",
+    "Location": "923 Decatur St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Muffaletta",
+    "Description": "Muffaletta!",
+    "Price": "$",
+    "Latitude": 29.958835,
+    "Longitude": -90.061051
+  },
+  {
+    "Name": "Di Martino's",
+    "Location": "3900 General De Gaulle Dr, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Muffaletta",
+    "Description": "Muffaletta!",
+    "Price": "$",
+    "Latitude": 29.922751,
+    "Longitude": -90.016248
+  },
+  {
+    "Name": "Luke",
+    "Location": "333 St Charles Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Oysters",
+    "Description": "HH: 75-cent oysters 3-6",
+    "Price": "$",
+    "Latitude": 29.950742,
+    "Longitude": -90.070635
+  },
+  {
+    "Name": "Pêche",
+    "Location": "800 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Oysters",
+    "Description": "All the fish!",
+    "Price": "$",
+    "Latitude": 29.9451,
+    "Longitude": -90.069149
+  },
+  {
+    "Name": "Trenasse",
+    "Location": "444 St Charles Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Oysters",
+    "Description": "HH: $7/6 oysters 3-6pm",
+    "Price": "$",
+    "Latitude": 29.950245,
+    "Longitude": -90.070278
+  },
+  {
+    "Name": "Casamento's",
+    "Location": "4330 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Oysters",
+    "Description": "OG Oyster Spot",
+    "Price": "$$",
+    "Latitude": 29.920594,
+    "Longitude": -90.101054
+  },
+  {
+    "Name": "Chemin à la Mer",
+    "Location": "2 Canal St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Oysters",
+    "Description": "Happy hour & oysters",
+    "Price": "$$$",
+    "Latitude": 29.948895,
+    "Longitude": -90.063494
+  },
+  {
+    "Name": "Poseidon Oyster Bar",
+    "Location": "2100 St Charles Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Oysters",
+    "Description": "Oyster bar",
+    "Price": "$$",
+    "Latitude": 29.934498,
+    "Longitude": -90.079631
+  },
+  {
+    "Name": "Sidecar Patio & Oyster Bar",
+    "Location": "1114 Constance St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Oysters",
+    "Description": "Oysters!",
+    "Price": "$$",
+    "Latitude": 29.940577,
+    "Longitude": -90.069168
+  },
+  {
+    "Name": "St. Pizza",
+    "Location": "1152 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Pizza",
+    "Description": "Pizza",
+    "Price": "$",
+    "Latitude": 29.939795,
+    "Longitude": -90.070443
+  },
+  {
+    "Name": "Guy's Po-Boys",
+    "Location": "811 Loyola Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boy",
+    "Price": "$",
+    "Latitude": 29.947007,
+    "Longitude": -90.077068
+  },
+  {
+    "Name": "Irene's",
+    "Location": "529 Bienville St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Greasy Italian",
+    "Price": "$",
+    "Latitude": 29.954133,
+    "Longitude": -90.066086
+  },
+  {
+    "Name": "Joey K's",
+    "Location": "3001 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boys & beer",
+    "Price": "$",
+    "Latitude": 29.925112,
+    "Longitude": -90.084884
+  },
+  {
+    "Name": "Liuzza's By the Track",
+    "Location": "211 N Lopez St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boy",
+    "Price": "$",
+    "Latitude": 29.969778,
+    "Longitude": -90.091205
+  },
+  {
+    "Name": "Melba's",
+    "Location": "1525 Elysian Fields Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po Boys (been here!)",
+    "Price": "$",
+    "Latitude": 29.973055,
+    "Longitude": -90.056454
+  },
+  {
+    "Name": "Mister Oso",
+    "Location": "601 Tchoupitoulas St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Lunch option",
+    "Price": "$",
+    "Latitude": 29.947324,
+    "Longitude": -90.067619
+  },
+  {
+    "Name": "Parasol's",
+    "Location": "2533 Constance St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Roast beef po boy",
+    "Price": "$",
+    "Latitude": 29.926475,
+    "Longitude": -90.080171
+  },
+  {
+    "Name": "Crabby Jack's",
+    "Location": "428 Jefferson Hwy, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boy",
+    "Price": "$",
+    "Latitude": 29.964813,
+    "Longitude": -90.135479
+  },
+  {
+    "Name": "Domilise's",
+    "Location": "501 Elysian Fields Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boy",
+    "Price": "$",
+    "Latitude": 29.962892,
+    "Longitude": -90.05565
+  },
+  {
+    "Name": "Gene's Po Boy",
+    "Location": "3226 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Chicken po boy",
+    "Price": "$",
+    "Latitude": 29.923459,
+    "Longitude": -90.086995
+  },
+  {
+    "Name": "Johnny's Po Boy",
+    "Location": "511 St Louis St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boys",
+    "Price": "$",
+    "Latitude": 29.955466,
+    "Longitude": -90.064442
+  },
+  {
+    "Name": "Parkway Bakery",
+    "Location": "538 Hagan Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boys; desserts",
+    "Price": "$",
+    "Latitude": 29.973269,
+    "Longitude": -90.090372
+  },
+  {
+    "Name": "Tracey's",
+    "Location": "3226 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Po boy",
+    "Price": "$",
+    "Latitude": 29.923459,
+    "Longitude": -90.086995
+  },
+  {
+    "Name": "Cochon Butcher",
+    "Location": "930 Tchoupitoulas St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Po-boy",
+    "Description": "Sandwiches",
+    "Price": "$",
+    "Latitude": 29.942293,
+    "Longitude": -90.067054
+  },
+  {
+    "Name": "Stein's",
+    "Location": "2207 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Quick Bites",
+    "Description": "Jewish Deli",
+    "Price": "$",
+    "Latitude": 29.929537,
+    "Longitude": -90.077116
+  },
+  {
+    "Name": "Tacos & Beer",
+    "Location": "1622 St Charles Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Quick Bites",
+    "Description": "Mexican a block away",
+    "Price": "$",
+    "Latitude": 29.937721,
+    "Longitude": -90.076065
+  },
+  {
+    "Name": "Tacos del Cartel",
+    "Location": "1010 Girod St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Quick Bites",
+    "Description": "Mexican",
+    "Price": "$",
+    "Latitude": 29.948067,
+    "Longitude": -90.075177
+  },
+  {
+    "Name": "Turkey and the Wolf",
+    "Location": "739 Jackson Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Quick Bites",
+    "Description": "sandwich",
+    "Price": "$",
+    "Latitude": 29.927193,
+    "Longitude": -90.074331
+  },
+  {
+    "Name": "Kingfish",
+    "Location": "337 Chartres St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Happy hour: 3:30-6 Daily",
+    "Price": "$",
+    "Latitude": 29.954981,
+    "Longitude": -90.066157
+  },
+  {
+    "Name": "Frankie and Johnny's",
+    "Location": "321 Arabella St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Creole",
+    "Description": "Seafood",
+    "Price": "$",
+    "Latitude": 29.916987,
+    "Longitude": -90.11887
+  },
+  {
+    "Name": "MoPho",
+    "Location": "514 City Park Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Less fancy restaurant",
+    "Price": "$",
+    "Latitude": 29.983088,
+    "Longitude": -90.105009
+  },
+  {
+    "Name": "Banh Mi Boys",
+    "Location": "3244 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Vietnamese; good for delivery",
+    "Price": "$",
+    "Latitude": 29.923354,
+    "Longitude": -90.087545
+  },
+  {
+    "Name": "Bao Mi",
+    "Location": "2000 Tulane Ave Ste B, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Vietnamese",
+    "Price": "$",
+    "Latitude": 29.957829,
+    "Longitude": -90.083004
+  },
+  {
+    "Name": "Cake Cafe",
+    "Location": "2440 Chartres St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Vietnamese",
+    "Price": "$",
+    "Latitude": 29.963691,
+    "Longitude": -90.052977
+  },
+  {
+    "Name": "Le's Baguette",
+    "Location": "4607 Dryades St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Lemongrass pork banh mi",
+    "Price": "$",
+    "Latitude": 29.929376,
+    "Longitude": -90.104993
+  },
+  {
+    "Name": "Magasin Vietnamese Cafe",
+    "Location": "4226 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Vietnamese",
+    "Price": "$",
+    "Latitude": 29.920832,
+    "Longitude": -90.099827
+  },
+  {
+    "Name": "Pho Tran",
+    "Location": "2005 Magazine St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Pho close to Airbnb",
+    "Price": "$",
+    "Latitude": 29.931056,
+    "Longitude": -90.075006
+  },
+  {
+    "Name": "Tatlo",
+    "Location": "240 Bourbon St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Vietnamese-Filipino fusion",
+    "Price": "$",
+    "Latitude": 29.955363,
+    "Longitude": -90.068473
+  },
+  {
+    "Name": "Viet Orleans Bistro",
+    "Location": "300 Baronne St, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Vietnamese",
+    "Price": "$",
+    "Latitude": 29.952161,
+    "Longitude": -90.072301
+  },
+  {
+    "Name": "Xanh NOLA",
+    "Location": "2381 St Claude Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Vietnamese Food",
+    "Price": "$",
+    "Latitude": 29.969436,
+    "Longitude": -90.052175
+  },
+  {
+    "Name": "Pho Tau Bay",
+    "Location": "1565 Tulane Ave, New Orleans, LA",
+    "Category": "Eat",
+    "Sub-Type": "Vietnamese",
+    "Description": "Less fancy restaurant",
+    "Price": "$",
+    "Latitude": 29.956544,
+    "Longitude": -90.078416
+  },
+  {
+    "Name": "Lagniappe Bakehouse",
+    "Location": "1825 Euterpe St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Breakfast",
+    "Description": "French pastry - South x West African",
+    "Price": "$",
+    "Latitude": 29.939571,
+    "Longitude": -90.079438
+  },
+  {
+    "Name": "Molly's Rise and Shine",
+    "Location": "2368 Magazine St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Breakfast",
+    "Description": "Breakfast",
+    "Price": "$",
+    "Latitude": 29.928013,
+    "Longitude": -90.079071
+  },
+  {
+    "Name": "Please-U-Restaurant",
+    "Location": "1751 St Charles Ave, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Breakfast",
+    "Description": "Breakfast across street",
+    "Price": "$",
+    "Latitude": 29.93676,
+    "Longitude": -90.077627
+  },
+  {
+    "Name": "Who Dat Coffee",
+    "Location": "2401 Burgundy St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Breakfast",
+    "Price": "$",
+    "Latitude": 29.966798,
+    "Longitude": -90.054159
+  },
+  {
+    "Name": "Mammoth Espresso",
+    "Location": "821 Baronne St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Fancy coffee",
+    "Price": "$",
+    "Latitude": 29.946055,
+    "Longitude": -90.074636
+  },
+  {
+    "Name": "Mojo Coffeehouse",
+    "Location": "1500 Magazine St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Fancy coffee",
+    "Price": "$",
+    "Latitude": 29.934221,
+    "Longitude": -90.07225
+  },
+  {
+    "Name": "Revelator Coffee",
+    "Location": "637 Tchoupitoulas St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Fancy coffee",
+    "Price": "$",
+    "Latitude": 29.946698,
+    "Longitude": -90.067596
+  },
+  {
+    "Name": "Spitfire Coffee",
+    "Location": "307 Exchange Pl, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Fancy coffee",
+    "Price": "$",
+    "Latitude": 29.954828,
+    "Longitude": -90.066985
+  },
+  {
+    "Name": "Whatever Coffee",
+    "Location": "2207 Magazine St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Espresso",
+    "Price": "$",
+    "Latitude": 29.929537,
+    "Longitude": -90.077116
+  },
+  {
+    "Name": "Avenue Cafe",
+    "Location": "1907 St Charles Ave, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Breakfast closest to airbnb",
+    "Price": "$",
+    "Latitude": 29.935765,
+    "Longitude": -90.078559
+  },
+  {
+    "Name": "Bearcat CBD",
+    "Location": "845 Carondelet St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Breakfast",
+    "Price": "$",
+    "Latitude": 29.945293,
+    "Longitude": -90.073551
+  },
+  {
+    "Name": "Cafe Envie",
+    "Location": "1241 Decatur St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Decent coffee",
+    "Price": "$",
+    "Latitude": 29.961527,
+    "Longitude": -90.058804
+  },
+  {
+    "Name": "Cafe Envie & Espresso Bar",
+    "Location": "1241 Decatur St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Decent coffee",
+    "Price": "$$",
+    "Latitude": 29.961527,
+    "Longitude": -90.058804
+  },
+  {
+    "Name": "Cherry Coffee",
+    "Location": "4877 Laurel St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Fancy coffee",
+    "Price": "$",
+    "Latitude": 29.918439,
+    "Longitude": -90.107949
+  },
+  {
+    "Name": "Coffee Science",
+    "Location": "410 S Broad St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Fancy coffee",
+    "Price": "$",
+    "Latitude": 29.962305,
+    "Longitude": -90.089644
+  },
+  {
+    "Name": "District Donuts",
+    "Location": "2209 Magazine St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Breakfast",
+    "Price": "$",
+    "Latitude": 29.929504,
+    "Longitude": -90.077171
+  },
+  {
+    "Name": "Fourth Wall Coffee",
+    "Location": "614 Gravier St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Close to Hilton",
+    "Price": "$",
+    "Latitude": 29.951013,
+    "Longitude": -90.069374
+  },
+  {
+    "Name": "French Truck Coffee",
+    "Location": "217 Chartres St, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Decent coffee",
+    "Price": "$",
+    "Latitude": 29.953867,
+    "Longitude": -90.06719
+  },
+  {
+    "Name": "HiVolt Coffee",
+    "Location": "1829 Sophie Wright Pl, New Orleans, LA",
+    "Category": "Morning",
+    "Sub-Type": "Coffee",
+    "Description": "Coffee & breakfast sandwiches",
+    "Price": "$",
+    "Latitude": 29.932412,
+    "Longitude": -90.074553
+  },
+  {
+    "Name": "Newcomb Museum",
+    "Location": "6823 St Charles Ave, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Art",
+    "Description": "Art museum",
+    "Price": "$",
+    "Latitude": 29.944624,
+    "Longitude": -90.116497
+  },
+  {
+    "Name": "Studio BE",
+    "Location": "2941 Royal St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Art",
+    "Description": "Art gallery",
+    "Price": "$",
+    "Latitude": 29.964478,
+    "Longitude": -90.047561
+  },
+  {
+    "Name": "Congo Square",
+    "Location": "701 N Rampart St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Historic Sites",
+    "Description": "Historic site",
+    "Price": "$",
+    "Latitude": 29.961421,
+    "Longitude": -90.068685
+  },
+  {
+    "Name": "Historic NO Collection",
+    "Location": "520 Royal St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Historic Sites",
+    "Description": "Historic site",
+    "Price": "$",
+    "Latitude": 29.956628,
+    "Longitude": -90.065244
+  },
+  {
+    "Name": "Secondline Arts",
+    "Location": "1209 Decatur St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Markets & Shopping",
+    "Description": "Gifts",
+    "Price": "$",
+    "Latitude": 29.96108,
+    "Longitude": -90.059247
+  },
+  {
+    "Name": "Toulouse Royale",
+    "Location": "601 Royal St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Markets & Shopping",
+    "Description": "Gift store with funky stuff",
+    "Price": "$",
+    "Latitude": 29.957404,
+    "Longitude": -90.065545
+  },
+  {
+    "Name": "French Market",
+    "Location": "French Quarter, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Markets & Shopping",
+    "Description": "Market",
+    "Price": "$",
+    "Latitude": 30.003035,
+    "Longitude": -90.109016
+  },
+  {
+    "Name": "St Roch Market",
+    "Location": "2381 St Claude Ave, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Markets & Shopping",
+    "Description": "Food hall multiple vendors",
+    "Price": "$$",
+    "Latitude": 29.969436,
+    "Longitude": -90.052175
+  },
+  {
+    "Name": "Candlelight Lounge",
+    "Location": "823 Frenchmen St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Music",
+    "Description": "Treme Brass Band (Wed)",
+    "Price": "$",
+    "Latitude": 29.966042,
+    "Longitude": -90.057862
+  },
+  {
+    "Name": "Music Box Village",
+    "Location": "4557 N Rampart St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Music",
+    "Description": "Music venue",
+    "Price": "$",
+    "Latitude": 29.963609,
+    "Longitude": -90.029383
+  },
+  {
+    "Name": "Preservation Hall",
+    "Location": "726 St Peter St, New Orleans, LA",
+    "Category": "Sights",
+    "Sub-Type": "Music",
+    "Description": "Classic jazz venue",
+    "Price": "$",
+    "Latitude": 29.958199,
+    "Longitude": -90.065488
+  }
+]

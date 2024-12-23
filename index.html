@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Orleans Venues</title>
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8B5CF6">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <!-- MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <style>
+        /* Previous CSS styles remain the same */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #map {
+            height: 100vh;
+            width: 100vw;
+            z-index: 1;
+        }
+
+        .sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 300px;
+            background: white;
+            z-index: 2;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar.active {
+            transform: translateX(0);
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            font-size: 1.2em;
+        }
+
+        .toggle-sidebar {
+            position: absolute;
+            left: 310px;
+            top: 10px;
+            z-index: 2;
+            background: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .search-container {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        #search {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .filter-container {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .filter-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .venue-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .venue-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+
+        .venue-item:hover {
+            background: #f5f5f5;
+        }
+
+        .map-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 2;
+            background: white;
+            padding: 8px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .locate-btn {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+            z-index: 2;
+            background: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            z-index: 2;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 600px) {
+            .sidebar {
+                width: 100%;
+            }
+            
+            .toggle-sidebar {
+                left: unset;
+                right: 10px;
+            }
+
+            .map-controls {
+                top: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading-overlay">Loading venues...</div>
+    <div id="map"></div>
+    
+    <div class="sidebar">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search venues...">
+        </div>
+        
+        <div class="filter-container">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="Drink">Drink</option>
+                <option value="Eat">Eat</option>
+                <option value="Morning">Morning</option>
+                <option value="Sights">Sights</option>
+            </select>
+            <select id="subtype-filter">
+                <option value="">All Sub-Types</option>
+            </select>
+            <select id="price-filter">
+                <option value="">All Prices</option>
+                <option value="$">$</option>
+                <option value="$$">$$</option>
+                <option value="$$$">$$$</option>
+            </select>
+        </div>
+        
+        <div class="venue-list"></div>
+    </div>
+    
+    <button class="toggle-sidebar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="map-controls">
+        <select id="basemap-select">
+            <option value="osm">OpenStreetMap</option>
+            <option value="satellite">Satellite</option>
+            <option value="dark">Dark Mode</option>
+            <option value="terrain">Terrain</option>
+        </select>
+    </div>
+    
+    <button class="locate-btn">
+        <i class="fas fa-location-crosshairs"></i>
+    </button>
+    
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background: #8B5CF6;"></div>
+            <span>Drink</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #F97316;"></div>
+            <span>Eat</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #10B981;"></div>
+            <span>Morning</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #3B82F6;"></div>
+            <span>Sights</span>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <!-- MarkerCluster JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+
+    <script>
+        // Initialize map with loading state
+        const loadingOverlay = document.getElementById('loading');
+        let venues = [];
+        
+        // Initialize the map
+        const map = L.map('map').setView([29.9511, -90.0715], 13);
+
+        // Base maps configuration
+        const basemaps = {
+            osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap contributors'
+            }),
+            satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles © Esri'
+            }),
+            dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '© CartoDB'
+            }),
+            terrain: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles © Esri'
+            })
+        };
+
+        // Add default basemap
+        basemaps.osm.addTo(map);
+
+        // Initialize marker cluster group
+        const markers = L.markerClusterGroup();
+
+        // Category colors
+        const categoryColors = {
+            'Drink': '#8B5CF6',
+            'Eat': '#F97316',
+            'Morning': '#10B981',
+            'Sights': '#3B82F6'
+        };
+
+        // Custom icon function
+        function createCustomIcon(category) {
+            return L.divIcon({
+                className: 'custom-icon',
+                html: `<div style="background-color: ${categoryColors[category]}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white;"></div>`,
+                iconSize: [24, 24],
+                iconAnchor: [12, 12]
+            });
+        }
+
+        // Load venues data
+        fetch('venues.json')
+            .then(response => response.json())
+            .then(data => {
+                venues = data;
+                
+                // Add markers
+                venues.forEach(venue => {
+                    const marker = L.marker([venue.Latitude, venue.Longitude], {
+                        icon: createCustomIcon(venue.Category)
+                    });
+                    
+                    const popupContent = `
+                        <h3>${venue.Name}</h3>
+                        <p>${venue.Location}</p>
+                        <p><strong>Category:</strong> ${venue.Category}</p>
+                        <p><strong>Type:</strong> ${venue["Sub-Type"]}</p>
+                        <p><strong>Price:</strong> ${venue.Price}</p>
+                        <p>${venue.Description}</p>
+                        <button onclick="getDirections(${venue.Latitude}, ${venue.Longitude}, '${venue.Name}')" 
+                                style="background: #4CAF50; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer;">
+                            Get Directions
+                        </button>
+                    `;
+                    
+                    marker.bindPopup(popupContent);
+                    markers.addLayer(marker);
+                });
+
+                map.addLayer(markers);
+                updateSubtypeOptions();
+                updateVenueList();
+                loadingOverlay.style.display = 'none';
+            })
+            .catch(error => {
+                console.error('Error loading venues:', error);
+                loadingOverlay.innerHTML = 'Error loading venues. Please refresh the page.';
+            });
+
+        // Sidebar toggle
+        const sidebar = document.querySelector('.sidebar');
+        const toggleBtn = document.querySelector('.toggle-sidebar');
+        
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        // Search and filter functionality
+        const searchInput = document.getElementById('search');
+        const venueList = document.querySelector('.venue-list');
+        
+        function updateVenueList(userLocation = null) {
+            const searchTerm = searchInput.value.toLowerCase();
+            const categoryFilter = document.getElementById('category-filter').value;
+            const subtypeFilter = document.getElementById('subtype-filter').value;
+            const priceFilter = document.getElementById('price-filter').value;
+            
+            let filteredVenues = venues.filter(venue => {
+                const matchesSearch = venue.Name.toLowerCase().includes(searchTerm);
+                const matchesCategory = !categoryFilter || venue.Category === categoryFilter;
+                const matchesSubtype = !subtypeFilter || venue["Sub-Type"] === subtypeFilter;
+                const matchesPrice = !priceFilter || venue.Price === priceFilter;
+                return matchesSearch && matchesCategory && matchesSubtype && matchesPrice;
+            });
+
+            if (userLocation) {
+                filteredVenues.forEach(venue => {
+                    venue.distance = calculateDistance(
+                        userLocation.lat,
+                        userLocation.lng,
+                        venue.Latitude,
+                        venue.Longitude
+                    );
+                });
+                filteredVenues.sort((a, b) => a.distance - b.distance);
+            }
+
+            venueList.innerHTML = '';
+            filteredVenues.forEach(venue => {
+                const venueElement = document.createElement('div');
+                venueElement.className = 'venue-item';
+                
+                let distanceHtml = '';
+                if (venue.distance !== undefined) {
+                    const distanceKm = venue.distance.toFixed(1);
+                    distanceHtml = `<span class="distance-badge">${distanceKm} km</span>`;
+                }
+
+                venueElement.innerHTML = `
+                    <h4>${venue.Name}${distanceHtml}</h4>
+                    <p>${venue["Sub-Type"]} - ${venue.Price}</p>
+                `;
+                
+                venueElement.addEventListener('click', () => {
+                    map.setView([venue.Latitude, venue.Longitude], 16);
+                    markers.eachLayer(marker => {
+                        const markerLatLng = marker.getLatLng();
+                        if (markerLatLng.lat === venue.Latitude && 
+                            markerLatLng.lng === venue.Longitude) {
+                            marker.openPopup();
+                        }
+                    });
+                });
+                venueList.appendChild(venueElement);
+            });
+        }
+
+        // Update subtype options based on selected category
+        function updateSubtypeOptions() {
+            const category = document.getElementById('category-filter').value;
+            const subtypeFilter = document.getElementById('subtype-filter');
+            const subtypes = new Set(venues
+                .filter(venue => !category || venue.Category === category)
+                .map(venue => venue["Sub-Type"]));
+            
+            subtypeFilter.innerHTML = '<option value="">All Sub-Types</option>';
+            [...subtypes].sort().forEach(subtype => {
+                const option = document.createElement('option');
+                option.value = subtype;
+                option.textContent = subtype;
+                subtypeFilter.appendChild(option);
+            });
+        }
+
+        // Distance calculation
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371; // Earth's radius in kilometers
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', () => updateVenueList());
+        document.getElementById('category-filter').addEventListener('change', () => {
+            updateSubtypeOptions();
+            updateVenueList();
+        });
+        document.getElementById('subtype-filter').addEventListener('change', updateVenueList);
+        document.getElementById('price-filter').addEventListener('change', updateVenueList);
+        
+        // Base map switcher
+        document.getElementById('basemap-select').addEventListener('change', (e) => {
+            Object.values(basemaps).forEach(layer => map.removeLayer(layer));
+            basemaps[e.target.value].addTo(map);
+        });
+
+        // Geolocation
+        const locateBtn = document.querySelector('.locate-btn');
+        
+        locateBtn.addEventListener('click', () => {
+            map.locate({setView: true, maxZoom: 16});
+        });
+
+        map.on('locationfound', (e) => {
+            // Update venue list with distances
+            updateVenueList(e.latlng);
+            
+            // Add or update user location marker
+            if (window.userMarker) {
+                map.removeLayer(window.userMarker);
+            }
+            window.userMarker = L.circle(e.latlng, {
+                radius: e.accuracy / 2,
+                color: '#4CAF50',
+                fillColor: '#4CAF50',
+                fillOpacity: 0.15
+            }).addTo(map);
+        });
+
+        map.on('locationerror', (e) => {
+            alert('Unable to find your location. Please ensure location services are enabled.');
+        });
+
+        // Get directions function
+        function getDirections(lat, lng, name) {
+            // Check if device is iOS
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            
+            if (isIOS) {
+                window.open(`maps://maps.apple.com/?daddr=${lat},${lng}&dirflg=d`);
+            } else {
+                window.open(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`);
+            }
+        }
+
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(error => {
+                        console.error('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
